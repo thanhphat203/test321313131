@@ -262,7 +262,7 @@
             renderSidebar();
 
             // Nếu chưa điền Token thì chỉ báo lưu cục bộ
-            if (GITHUB_TOKEN === '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') {
+            if (!GITHUB_TOKEN || GITHUB_TOKEN === 'THAY_BANG_TOKEN_CUA_BAN') {
                 alert("Đã lưu cục bộ! Để web tự động cập nhật lên mạng, vui lòng điền GITHUB_TOKEN vào file admin.html.");
                 btnPublish.innerHTML = 'Xuất bản ngay'; btnPublish.disabled = false;
                 return;
